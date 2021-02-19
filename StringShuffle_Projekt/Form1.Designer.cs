@@ -28,13 +28,123 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.listView1 = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.btnHinzufügen = new System.Windows.Forms.Button();
+            this.btnBearbeiten = new System.Windows.Forms.Button();
+            this.btnEntfernen = new System.Windows.Forms.Button();
+            this.btnAlleEntfernen = new System.Windows.Forms.Button();
+            this.btnSortieren = new System.Windows.Forms.Button();
+            this.btnVermischen = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // listView1
+            // 
+            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2});
+            this.listView1.HideSelection = false;
+            this.listView1.Location = new System.Drawing.Point(22, 23);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(544, 415);
+            this.listView1.TabIndex = 0;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Nummer";
+            this.columnHeader1.Width = 100;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Name";
+            this.columnHeader2.Width = 400;
+            // 
+            // btnHinzufügen
+            // 
+            this.btnHinzufügen.Location = new System.Drawing.Point(603, 34);
+            this.btnHinzufügen.Name = "btnHinzufügen";
+            this.btnHinzufügen.Size = new System.Drawing.Size(191, 47);
+            this.btnHinzufügen.TabIndex = 1;
+            this.btnHinzufügen.Text = "Eintrag hinzufügen";
+            this.btnHinzufügen.UseVisualStyleBackColor = true;
+            // 
+            // btnBearbeiten
+            // 
+            this.btnBearbeiten.Location = new System.Drawing.Point(603, 94);
+            this.btnBearbeiten.Name = "btnBearbeiten";
+            this.btnBearbeiten.Size = new System.Drawing.Size(191, 47);
+            this.btnBearbeiten.TabIndex = 2;
+            this.btnBearbeiten.Text = "Eintrag bearbeiten";
+            this.btnBearbeiten.UseVisualStyleBackColor = true;
+            // 
+            // btnEntfernen
+            // 
+            this.btnEntfernen.Location = new System.Drawing.Point(603, 154);
+            this.btnEntfernen.Name = "btnEntfernen";
+            this.btnEntfernen.Size = new System.Drawing.Size(191, 47);
+            this.btnEntfernen.TabIndex = 3;
+            this.btnEntfernen.Text = "Eintrag entfernen";
+            this.btnEntfernen.UseVisualStyleBackColor = true;
+            // 
+            // btnAlleEntfernen
+            // 
+            this.btnAlleEntfernen.Location = new System.Drawing.Point(603, 214);
+            this.btnAlleEntfernen.Name = "btnAlleEntfernen";
+            this.btnAlleEntfernen.Size = new System.Drawing.Size(191, 47);
+            this.btnAlleEntfernen.TabIndex = 4;
+            this.btnAlleEntfernen.Text = "Alle Einträge entfernen";
+            this.btnAlleEntfernen.UseVisualStyleBackColor = true;
+            // 
+            // btnSortieren
+            // 
+            this.btnSortieren.Location = new System.Drawing.Point(603, 326);
+            this.btnSortieren.Name = "btnSortieren";
+            this.btnSortieren.Size = new System.Drawing.Size(191, 47);
+            this.btnSortieren.TabIndex = 5;
+            this.btnSortieren.Text = "Alle Einträge sortieren";
+            this.btnSortieren.UseVisualStyleBackColor = true;
+            // 
+            // btnVermischen
+            // 
+            this.btnVermischen.Location = new System.Drawing.Point(603, 379);
+            this.btnVermischen.Name = "btnVermischen";
+            this.btnVermischen.Size = new System.Drawing.Size(191, 47);
+            this.btnVermischen.TabIndex = 6;
+            this.btnVermischen.Text = "Alle Einträge vermischen";
+            this.btnVermischen.UseVisualStyleBackColor = true;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(829, 457);
+            this.Controls.Add(this.btnVermischen);
+            this.Controls.Add(this.btnSortieren);
+            this.Controls.Add(this.btnAlleEntfernen);
+            this.Controls.Add(this.btnEntfernen);
+            this.Controls.Add(this.btnBearbeiten);
+            this.Controls.Add(this.btnHinzufügen);
+            this.Controls.Add(this.listView1);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.Button btnHinzufügen;
+        private System.Windows.Forms.Button btnBearbeiten;
+        private System.Windows.Forms.Button btnEntfernen;
+        private System.Windows.Forms.Button btnAlleEntfernen;
+        private System.Windows.Forms.Button btnSortieren;
+        private System.Windows.Forms.Button btnVermischen;
     }
 }
 
