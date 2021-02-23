@@ -70,6 +70,7 @@
             this.btnHinzufügen.TabIndex = 1;
             this.btnHinzufügen.Text = "Eintrag hinzufügen";
             this.btnHinzufügen.UseVisualStyleBackColor = true;
+            this.btnHinzufügen.Click += new System.EventHandler(this.btnHinzufügen_Click);
             // 
             // btnBearbeiten
             // 
@@ -79,6 +80,7 @@
             this.btnBearbeiten.TabIndex = 2;
             this.btnBearbeiten.Text = "Eintrag bearbeiten";
             this.btnBearbeiten.UseVisualStyleBackColor = true;
+            this.btnBearbeiten.Click += new System.EventHandler(this.btnBearbeiten_Click);
             // 
             // btnEntfernen
             // 
@@ -88,6 +90,7 @@
             this.btnEntfernen.TabIndex = 3;
             this.btnEntfernen.Text = "Eintrag entfernen";
             this.btnEntfernen.UseVisualStyleBackColor = true;
+            this.btnEntfernen.Click += new System.EventHandler(this.btnEntfernen_Click);
             // 
             // btnAlleEntfernen
             // 
@@ -97,6 +100,7 @@
             this.btnAlleEntfernen.TabIndex = 4;
             this.btnAlleEntfernen.Text = "Alle Einträge entfernen";
             this.btnAlleEntfernen.UseVisualStyleBackColor = true;
+            this.btnAlleEntfernen.Click += new System.EventHandler(this.btnAlleEntfernen_Click);
             // 
             // btnSortieren
             // 
@@ -106,6 +110,7 @@
             this.btnSortieren.TabIndex = 5;
             this.btnSortieren.Text = "Alle Einträge sortieren";
             this.btnSortieren.UseVisualStyleBackColor = true;
+            this.btnSortieren.Click += new System.EventHandler(this.btnSortieren_Click);
             // 
             // btnVermischen
             // 
@@ -130,13 +135,13 @@
             this.Controls.Add(this.listView1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.Button btnHinzufügen;
@@ -145,6 +150,7 @@
         private System.Windows.Forms.Button btnAlleEntfernen;
         private System.Windows.Forms.Button btnSortieren;
         private System.Windows.Forms.Button btnVermischen;
+        internal System.Windows.Forms.ListView listView1;
     }
 }
 
