@@ -31,8 +31,26 @@ namespace StringShuffle_Projekt
             projekte = new List<String>();
             listView1.FullRowSelect = true;
 
-     
+
+            
             datenEinlesen();
+            listViewEinlesen();
+
+        }
+
+        internal void listViewEinlesen()
+        {
+            listView1.Items.Clear();
+            for( int i = 0; i<projekte.Count; i++)
+            {
+                lvItem = new ListViewItem("");
+                lvItem.SubItems.Add(i +  1 + "");
+                lvItem.SubItems.Add(projekte[i]);
+                listView1.Items.Add(lvItem);
+            }
+            listView1.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent);
+            listView1.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
+            columnHeader3.Width = 0;
         }
 
         public void datenEinlesen()
