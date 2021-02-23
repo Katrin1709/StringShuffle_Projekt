@@ -29,7 +29,7 @@ namespace StringShuffle_Projekt
 
         private void btnSpeichern_Click(object sender, EventArgs e)
         {
-            if (this.Text.Equals("Bearbeiten")) // Berarbeiten
+            if (this.Text.Equals("Eintrag Bearbeiten")) // Berarbeiten
             {
                 Form1.f1.projekte[inde] = txtEintrag.Text;
                 this.Close();

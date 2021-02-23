@@ -77,7 +77,7 @@ namespace StringShuffle_Projekt
 
             f2.txtEintrag.Text = lvItem.SubItems[0].Text;
 
-            //f2.inde = lvItem.Index;
+            f2.inde = lvItem.Index;
             f2.ShowDialog();
         }
 
