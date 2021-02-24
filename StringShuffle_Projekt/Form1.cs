@@ -26,6 +26,8 @@ namespace StringShuffle_Projekt
         internal Form2 f2 = new Form2();
         internal int startnum = 1;
 
+        Random rand = new Random();
+
         private void Form1_Load(object sender, EventArgs e)
         {
             projekte = new List<String>();
@@ -84,6 +86,7 @@ namespace StringShuffle_Projekt
 
         private void btnBearbeiten_Click(object sender, EventArgs e)
         {
+
             f2.Text = "Eintrag Bearbeiten";
 
             if (listView1.SelectedItems.Count == 0)
@@ -122,7 +125,8 @@ namespace StringShuffle_Projekt
 
         private void btnSortieren_Click(object sender, EventArgs e)
         {
-            listView1.Sorting = SortOrder.Ascending;
+           projekte = projekte.OrderBy(a => a).ToList();
+            listViewEinlesen();
         }
 
         internal void TextdateiSpeichern()
@@ -135,6 +139,14 @@ namespace StringShuffle_Projekt
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
             TextdateiSpeichern();
+        }
+
+        private void btnVermischen_Click(object sender, EventArgs e)
+        {
+            
+            var k = projekte.OrderBy(a => rand.Next());
+            projekte = k.ToList<string>();
+            listViewEinlesen();
         }
     }
 }

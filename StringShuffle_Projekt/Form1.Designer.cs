@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.listView1 = new System.Windows.Forms.ListView();
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.btnHinzufügen = new System.Windows.Forms.Button();
@@ -37,7 +38,6 @@
             this.btnAlleEntfernen = new System.Windows.Forms.Button();
             this.btnSortieren = new System.Windows.Forms.Button();
             this.btnVermischen = new System.Windows.Forms.Button();
-            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // listView1
@@ -53,6 +53,10 @@
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Width = 0;
             // 
             // columnHeader1
             // 
@@ -122,11 +126,7 @@
             this.btnVermischen.TabIndex = 6;
             this.btnVermischen.Text = "Alle Einträge vermischen";
             this.btnVermischen.UseVisualStyleBackColor = true;
-            // 
-            // columnHeader3
-            // 
-            this.columnHeader3.DisplayIndex = 2;
-            this.columnHeader3.Width = 0;
+            this.btnVermischen.Click += new System.EventHandler(this.btnVermischen_Click);
             // 
             // Form1
             // 
