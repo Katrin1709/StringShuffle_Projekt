@@ -50,9 +50,6 @@ namespace StringShuffle_Projekt
                 lvItem.SubItems.Add(projekte[i]);
                 listView1.Items.Add(lvItem);
             }
-            listView1.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent);
-            listView1.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
-            columnHeader3.Width = 0;
         }
 
         public void datenEinlesen()
@@ -95,8 +92,7 @@ namespace StringShuffle_Projekt
                 return;
             }
             lvItem = listView1.SelectedItems[0];
-
-            f2.txtEintrag.Text = lvItem.SubItems[0].Text;
+            f2.txtEintrag.Text = lvItem.SubItems[2].Text;
 
             f2.inde = lvItem.Index;
             f2.ShowDialog();

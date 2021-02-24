@@ -44,6 +44,7 @@ namespace StringShuffle_Projekt
             Form1.f1.projekte.Clear();
             Form1.f1.listView1.Items.Clear();
             Form1.f1.datenEinlesen();
+            Form1.f1.listViewEinlesen();
         }
 
         private void btnAbbrechen_Click(object sender, EventArgs e)
